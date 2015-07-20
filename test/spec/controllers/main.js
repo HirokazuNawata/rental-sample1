@@ -16,12 +16,4 @@ describe('Controller: MainCtrl', function () {
       // place here mocked dependencies
     });
   }));
-
-  it('旧作を三日借りたら 350 円', function () {
-    // どういうテストコードを書く?
-
-    var result;
-
-    expect(result).toBe(350);
-  });
 });

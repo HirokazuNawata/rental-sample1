@@ -11,8 +11,11 @@ describe('Service: rentalService', function () {
     rentalService = _rentalService_;
   }));
 
-  it('should do something', function () {
-    expect(!!rentalService).toBe(true);
-  });
+  it('旧作を三日借りたら 350 円', function () {
+    // どういうテストコードを書く?
 
+    var result = rentalService.getRentalFee({type: 'regular'}, 3);
+
+    expect(result).toBe(350);
+  });
 });
