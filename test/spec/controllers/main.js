@@ -17,7 +17,11 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
+  it('旧作を三日借りたら 350 円', function () {
+    // どういうテストコードを書く?
+
+    var result;
+
+    expect(result).toBe(350);
   });
 });

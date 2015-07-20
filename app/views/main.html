@@ -1,23 +1,30 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div class="container">
+  <div>
+    <select id="select-video" ng-model="selectedItem">
+      <option value="">選んでください...</option>
+      <option ng-repeat="item in items" value="{{item.id}}">{{item.title}}</option>
+    </select>
+    を
+    <input id="input-days" type="text" required ng-model="days">日
+    <button id="rental" type="button" ng-click="rental()">借りる</button>
+  </div>
+  <div>
+    <table class="table">
+      <tr>
+        <th>種類</th>
+        <th>金額</th>
+      </tr>
+      <tr>
+        <td>新作</td>
+        <td>一日 300 円。</td>
+      </tr>
+      <tr>
+        <td>旧作</td>
+        <td>二日までは 200 円。三日目からは一日 150 円。</td>
+      </tr>
+      <tr>
+        <td>子供向け</td>
+        <td>三日までは 300 円。四日目からは一日 150 円。</td>
+    </table>
+  </div>
 </div>
